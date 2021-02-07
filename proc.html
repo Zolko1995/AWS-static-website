@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>hardvertár</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <div id="logo">
+                <div id="logo_text">
+                    <!-- class="logo_colour", allows you to change the colour of the text -->
+                    <h1><a href="fooldal.html">Hardvertár<span class="logo_colour"></span></a></h1>
+                    <h2>Processzorok, Grafikus kártyák, egyéb...</h2>
+                </div>
+            </div>
+            <div id="menubar">
+                <ul id="menu">
+                    <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                    <li><a href="fooldal.html">Fooldal</a></li>
+                    <li class="selected"><a href="proc.html">A CPUk-ról</a></li>
+                    <li><a href="gen.html">Generációk</a></li>
+                    <li><a href="dev.html">Fejlodésük</a></li>
+                    <li><a href="benchmark.html">Architektúrák</a></li>
+                    <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="site_content">
+            <div class="sidebar">
+                <!-- insert your sidebar items here -->
+                <h3>Hírek</h3>
+                <h4><b>Sok részlet kiderült az Intel Comet Lake-S processzorok specifikációiról</b></h4>
+                <h5>Januar 2, 2020</h5>
+                <h4><b>Furcsa mérkozések jönnek az Intel és az AMD frontján</b></h4>
+                <h5>December 29, 2019</h5>
+                <h4><b>Bizonyos elso generációs Ryzenek már második generációs lapkával érkeznek</b></h4>
+                <h5>December 27, 2019</h5>
+                <h4><b>Az LGA1200 kompatibilis lesz elodeinek hutésével</b></h4>
+                <h5>December 26, 2019</h5>
+                <h4><b>Sokáig marad a Cascade Lake-X generáció az Intel HEDT kínálatában</b></h4>
+                <h5>December 19, 2019</h5>
+                <h4><b>Bemutatta legújabb DRIVE platformját az NVIDIA</b></h4>
+                <h5>December 18, 2019</h5>
+                <h4><b>Jövore megpörgeti a mobil fejlesztéseket az AMD</b></h4>
+                <h5>December 13, 2019</h5>
+                <h3>Hasznos linkek
+		<h4>
+          <li><a href="https://www.intel.com/content/www/us/en/homepage.html">Intel</a></li>
+          <li><a href="https://www.amd.com/en">AMD</a></li>
+          <li><a href="https://www.qualcomm.com/snapdragon">Snapdragon</a></li>
+		  </h4>
+        </ul>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>A Processzorokról</h1>
+		<span class="left"><img src="style/cpu.png" alt="intel extreme cpus" /></span>
+		<h2>Mi a szerepe és mire szolgál a processzor?</h2>
+        <p>Ez a központi egység a számítógép egyik legfontosabb és a legdrágább alkatrésze is egyben. Minosége, gyorsasága, teljesítménye nagyban meghatározza a komputer muködését.</p>
+		<p>Manapság a processzorok több milliárd tranzisztort és elektronikus logikai elemet tartalmaznak. Mindegyik részegységet – legyen az videokártya, rendszersín stb. – saját processzor vagy processzorok vezérlik. Ezek közül a legfontosabb a központi feldolgozó egység. A CPU-architektúra alapján épül fel az alaplap-architektúra és kerül megtervezésre maga a számítógép-architektúra és -konstrukció.</p>
+        <p>Minden processzor egy adott számú</p>
+		<ul>
+		<li>tárolóegységet (regisztert),</li>
+		<li>aritmetikai-logikai egységet (ALU)</li>
+		<li>és vezérloegységet (CU)</li>
+		</ul>
+		<p>tartalmaz. A regiszterek a programállapot, a memóriacímek, az adatcímek ideiglenes tárolását végzik a központi feldolgozó egységben. A regiszterek többnyire néhány bájt kapacitású tárolók. Ennek megfeleloen a regiszterek többfélék lehetnek: programszámláló regiszter, utasítás regiszter, memóriacím regiszter, memóriaadat regiszter és állapotregiszter. A processzorban  az ALU hajtja végre a matematikai számításokat és a logikai muveleteket.</p>
+		<p>A vezérloegység lehívja, értelmezi és végrehajtja a regiszter által tárolt utasításokat, vezérli a számítógép többi egységének muködését.</p>
+		<p>A központi vezérlo egységek saját belso memóriával – <b>cache memóriával</b> – is rendelkeznek. A cache memória vagy gyorsítótár gyorsabb az operatív memóriánál, de lassabb a már fent említett regisztereknél. Célja, hogy a különbözo fajtájú memóriák (pl. a gyorsabb operatív tár és a lassúbb merevlemez) közötti sebességkülönbséget kiküszöbölje, így gyorsítva az alkalmazások futtatását.</p>
+		<h2>CPU órajel és teljesítmény</h2>
+		<span class="left"><img src="style/clock.jpg" alt="clock" /></span>
+		<p>A processzor legfontosabb jellemzoje az órajel (clock signal). Mértékegysége a korszeru processzorok esetén a GHz (gigahertz). A processzor teljesítményét elsosorban az órajel határozza meg. A 2 GHz-es órajel azt jelenti, hogy a processzor 1 másodperc alatt 2 milliárd muveletet elvégzésére képes. Minél nagyobb az órajel, annál nagyobb a processzor teljesítménye. Ez az állítás teljességgel igaz volt a többmagos processzorok megjelenéséig.</p>
+        <p>Korábban minden CPU egy maggal rendelkezett. Teljesítményüket hosszú évekig sikerült az órajel emelésével növelni. A fejlesztok egy ido után abba a problémába ütköztek, hogy a frekvencia tovább már nem növelheto. Pontosabban az órajel növelheto, de a processzor hutése egyre nehezebbnek bizonyult. Ennek az a magyarázata, hogy a frekvencia növeléséhez egyre több feszültséget kellett felvennie a CPU-nak, ami egyre nagyobb hotermeléssel járt. A mérnökök sokáig törték a fejüket, hogy hogyan tovább? Végül arra jutottak, hogy nem a processzor vastagságát fogják növelni, hanem a területét. A vezérlo egységekbe így került egy mag helyett ketto. A két mag lehetové tette, hogy két feladatot futtassanak egyszerre.</p>
+		<h2>A két legismertebb laptop processzorgyártó</h2>
+		<span class="left"><img src="style/vs.jpg" alt="intel vs amd" /></span>
+		<p>Mára a hordozható számítógépek többségét az Intel és az AMD által gyártott processzorokkal szerelik fel. Érdemes tudni, hogy az Intel processzorok energiahatékonysága általában jobb az AMD processzorok effektivitásánál, ezért az ezekkel felszerelt laptopok csendesebben, nagyobb sebességgel és hosszabb élettartam mellett üzemelnek. A hozzáférheto áron beszerezheto Intel Celeron  és Intel Pentium processzorok tudása nagyjából megfelel az AMD márka E1 és E2 szériájú központi feldolgozó egységének. Notebook vásárlása elott érdemes a processzor és más eroforrások minosége alapján mérlegelni és választani a szaküzletekben vagy webáruházakban elérheto kínálatból. Errol részletesebben itt: Laptop választás méret és teljesítmény alapján.</p>
+	  </div>
+    </div>
+    <div id="footer">
+	Minden Jog Fenntartva Copyright @ 2019 Zoltan Berkula
+    </div>
+  </div>
+</body>
+</html>
